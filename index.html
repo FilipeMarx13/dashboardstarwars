@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>StarWars Dashboard</title>
+     <script src="https://unpkg.com/feather-icons"></script>
+     <!-- <script src="https://kit.fontawesome.com/6cec7dfa7d.js" crossorigin="anonymous"></script> -->
+  </head>
+  <body>
+    <div class="container">
+      <div class="lateral-menu">
+        <img src="icons/logo.png" alt="">
+        <div class="menu-lateral">
+          <ul>
+            <li><img src="icons/dashboard.svg" alt=""> <p>Dashboard</p></li>
+            <li><img src="icons/personagens.svg" alt=""><p>Characters</p></li>
+            <li><img src="icons/planetas.svg" alt=""> <p>Planets & Moons</p></li>
+            <li><img src="icons/nave.svg" alt=""> <p>Spacecraft</p></li>
+          </ul>
+        </div>
+        <div class="settings">
+          <i data-feather="settings"></i>
+          <p>Settings</p>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="cards-header">
+          <!-- <div class="card card-small">
+          <div class="card-content">
+            <div class="card-info">
+              <p>Characters</p>
+              <h2 id='personagens'></h2>
+            </div>
+              <img src="icons/personagens-black.svg" alt="">
+          </div>
+        </div> -->
+              <div class="card1">
+            <div class="card card-large">
+              <div class="card-container">
+                <div class="card-content">
+                  <div class="card-info">
+                    <p>Characters</p>
+                    <h2 id='personagens'></h2>
+                  </div>
+                    <img src="icons/personagens-black.svg" alt="">
+                  </div>
+
+                <div class="card-content">
+                  <div class="card-info">
+                    <p>Filmes</p>
+                    <h2 id='filmes'></h2>
+                  </div>
+                    <img src="icons/the.svg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+              <div class="card2">
+          <div class="card card-large">
+              <div class="card-container">
+              <div class="card-content">
+                <div class="card-info">
+                  <p>Moons</p>
+                  <h2 id='moons'></h2>
+                </div>
+                  <img src="icons/luas-black.svg" alt="">
+              </div>
+
+                <div class="card-content">
+                  <div class="card-info">
+                    <p>Planets</p>
+                    <h2 id='planets'></h2>
+                  </div>
+                    <img src="icons/planetas-black.svg" alt="">
+                </div>
+              </div>
+            </div>
+        </div>
+              <div class="card3">
+          <div class="card card-large">
+              <div class="card-container">
+              <div class="card-content">
+                <div class="card-info">
+                  <p>Spacecrafts</p>
+                  <h2 id='naves'></h2>
+                </div>
+                  <img src="icons/nave-black.svg" alt="">
+              </div>
+
+                <div class="card-content">
+                  <div class="card-info">
+                    <p>Vehicles</p>
+                    <h2 id='vehicles'></h2>
+                  </div>
+                    <img src="icons/startup.svg" alt="">
+                </div>
+              </div>
+            </div>
+        </div>
+            <!-- <div class="card card-small">
+          <div class="card-content">
+            <div class="card-info">
+              <p>Spacecrafts</p>
+              <h2 id='naves'></h2>
+            </div>
+              <img src="icons/nave-black.svg" alt="">
+          </div>
+        </div> -->
+        </div>
+        <div class="info">
+          <div class="table">
+          <h5>MOVIES</h5>
+          <p>Star Wars list movies</p>
+          <div class="">
+            <table id="filmstabela">
+              <thead>
+                <tr>
+                  <th>Title</th>
+                  <th>Release Date</th>
+                  <th>Director</th>
+                  <th>Episode</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+          <div class="chart">
+            <div id="piechart" style="width: 390; height: 390px;"></div>
+          </div>
+      </div>
+      </div>
+
+    </div>
+    <script>
+      feather.replace()
+    </script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="main.js"> </script>
+  </body>
+</html>
